@@ -1,0 +1,15 @@
+{
+  "name": "cypress-ntlm-auth-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-docker": "docker build -t cypress-ntlm-auth-docker .",
+    "test": "docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress-ntlm cypress-ntlm-auth-docker run"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress-ntlm-auth": "^3.2.2"
+  }
+}
